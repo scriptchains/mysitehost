@@ -1,0 +1,154 @@
+body {
+    background-image: radial-gradient(#d630ff 1.5px, transparent 1.5px);
+    background-size: 78px 78px;
+    background-color: #131313;
+    margin: 0px;
+    margin-top: 200px;
+  }
+
+  .mainContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    background-color: rgb(24, 24, 24) ;
+    border-radius: 15px;
+  }
+
+ .pepebox{
+    text-align: center;
+    border: 5px;
+    background: rgb(21, 21, 21);
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 17px;
+  }
+  
+  .pepetext {
+   font-family: Courier 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
+   color: rgb(239, 52, 202); 
+   font-size: 15px;
+   text-decoration: none;
+   cursor: pointer;
+   border: rgb(73, 8, 131, 15px);
+   text-shadow: #000000, 4px;
+ }
+
+ .spinnerbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 25px;
+
+ }
+ 
+ .spinner {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    animation: spinner-x0t3la 3s infinite linear;
+ }
+ 
+ .spinner::before {
+    content: '';
+    display: block;
+    height: 56px;
+    width: 11.2px;
+    animation: spinner-x0t3la 0.5s infinite;
+    background: #ff2a9b;
+    position: absolute;
+    left: 50%;
+    margin-left: -5.6px;
+    
+ }
+ 
+ @keyframes spinner-x0t3la {
+    to {
+       transform: rotate(180deg);
+       animation-delay: 100ms;
+       
+    }
+ }
+
+  .pepe2{
+    text-indent: 5em;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.glitch-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 15;
+    padding-right: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+ }
+ 
+ .glitch {
+    position: relative;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    letter-spacing: 5px;
+    z-index: 1;
+    
+ }
+ 
+ .glitch:before,
+ .glitch:after {
+    display: block;
+    content: attr(data-glitch);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+ }
+ 
+ .glitch:before {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+    color: #0ff;
+    z-index: -1;
+ }
+ 
+ .glitch:after {
+    animation: glitch-color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+    color: #ff00ff;
+    z-index: -2;
+ }
+ 
+ @keyframes glitch-color {
+    0% {
+       transform: translate(0);
+    }
+ 
+    20% {
+       transform: translate(-3px, 3px);
+    }
+ 
+    40% {
+       transform: translate(-3px, -3px);
+    }
+ 
+    60% {
+       transform: translate(3px, 3px);
+    }
+ 
+    80% {
+       transform: translate(3px, -3px);
+    }
+ 
+    to {
+       transform: translate(0);
+    }
+ }
